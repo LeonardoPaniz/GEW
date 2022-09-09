@@ -9,6 +9,17 @@ routes.get('/', (req, res) => {
         console.log(e);
     })
 })
+
+routes.get('/:id', (req, res) => {
+    const {id} = req.params
+    connection.query(`SELECT * FROM cadastros WHERE id = '${id}'`, (e, rows, fields)=>{
+        if(!e)
+        res.send(rows[0]);
+        else
+        console.log(e);
+    })
+})
+
 routes.post('/', (req, res)=>{
     const data = {
         nome: req.body.nome, email: req.body.email, senha: req.body.senha, 
@@ -22,7 +33,7 @@ routes.post('/', (req, res)=>{
     }) 
 })
 
-/* routes.put('/:id', (req, res)=>{
+ routes.put('/:id', (req, res)=>{
     const {id} = req.params
     const {nome, email, senha, telefone, cpf, nivel, ativo} = req.body
 
@@ -34,6 +45,6 @@ routes.post('/', (req, res)=>{
         else
         console.log(e);
     }) 
-}) */
+}) 
 
 module.exports = routes;
