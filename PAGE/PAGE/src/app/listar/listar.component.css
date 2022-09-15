@@ -1,0 +1,37 @@
+table {
+  background-color: rgb(42, 173, 130);
+  box-shadow: 1px 1px 3px #000;
+  width: 125%;
+  overflow: auto;
+
+  }
+  .mat-raised-button {
+    background-color: rgb(8, 139, 118);
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    background-color: #2aad82;
+    box-shadow: 1px 1px 3px #000;
+    width: 125%;
+  }
+tr, th, td{
+  text-align: center;
+}
+
+h2{
+  font-size: 2rem;
+  color: #2aad82;
+  text-shadow: 1px 1px 2px #000;
+  margin-top: 3rem;
+  margin-block-end: 2rem;
+}
+tr.lines{
+  cursor: pointer;
+}
+button.delet{
+  background-color: rgb(8, 139, 118);
+  background-color: #0f865e;
+  box-shadow: 1px 1px 3px #000;
+  width: 100%;
+  border: rgb(100, 97, 97);
+  
+}

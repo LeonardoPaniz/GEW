@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Dados salvos com sucesso</h1>
+<div mat-dialog-content>
+  Deseja ir para a listagem?
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close [routerLink]="['']" >não</button>
+  <button mat-button mat-dialog-close cdkFocusInitial [routerLink]="['/listagem']" >sim</button>
+</div>
+
